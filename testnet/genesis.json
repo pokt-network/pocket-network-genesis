@@ -1,6 +1,6 @@
 {
-    "genesis_time": "2020-03-09T21:20:52.789702Z",
-    "chain_id": "pocket-testnet-rc-0.2.1-r1",
+    "genesis_time": "2020-04-17T23:00:00.000000Z",
+    "chain_id": "pocket-testnet-rc-0.2.2",
     "consensus_params": {
         "block": {
             "max_bytes": "15000",
@@ -64,150 +64,204 @@
                 "participation_rate_on": false
             },
             "applications": [{
-                "address": "031ccd0821df95cd80b78182c04937b45456b08f",
-                "public_key": "57692033055cbdd1a3308a6364b24121d32d7536bb51660843ddfd96c879c2ba",
-                "jailed": false,
-                "chains": ["4ae7539e01ad2c42528b6a697f118a3535e404fe65999b2c6fee506465390367"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "2ca5acb7ef55a89dba835fa3bbec5ff002119e79",
-                "public_key": "519bb77ecc69818a9e5cf7bc44d8371e7998b696143fa89b17c6c4faac13ee1c",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "2d089de210afd5176b46b38b7c5f4b1ce63622bf",
-                "public_key": "fa457de4393c386ae3c4dde8703bf25080cc9909d98b55fbc7d6f2ca057450a2",
-                "jailed": false,
-                "chains": ["d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "4211d2c0604a6088a047851a16e6e88426f8b5dd",
-                "public_key": "8bca04934c532b3b6efa8fc3737b2d80d4fcfb78318011ef0f647fef7b57f09f",
-                "jailed": false,
-                "chains": ["a969144c864bd87a92e974f11aca9d964fb84cf5fb67bcc6583fe91a407a9309", "8ef9a7c67f6f8ad14f82c1f340963951245f912f037a7087f3f2d2f9f9ee38a8"],
-                "max_relays": "10000000",
-                "status": 2,
-                "staked_tokens": "10000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "4fa209fc2677153ce7fa11a115817f9fd078b3d6",
-                "public_key": "d196e90a2399e7c5bd610e440a36147990b02012fc4c87798292ede77398dcdc",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "90000000",
-                "status": 2,
-                "staked_tokens": "90000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "55067bb69f069a343d13f682c134f70c3bf8465a",
-                "public_key": "7c7b3269e0928d1a80310a3214589ebf4b41b20f01ed87a4f0abb344977325a7",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff", "d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8"],
-                "max_relays": "1000000",
-                "status": 2,
-                "staked_tokens": "1000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "56c4e3fddea141566f906e92545e027fdefcb8b2",
-                "public_key": "14dc389a0d3903f4ba2517747f79a8db44c5205f3dca538eb3373e20057c8334",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "90000000",
-                "status": 2,
-                "staked_tokens": "90000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "96de69d684a1d3ed6cccd5f70d99d77e28bda55b",
-                "public_key": "6e2cda5a6b6709f562dfbc7628099878fabb12d4943261be3cbb76da0bced999",
-                "jailed": false,
-                "chains": ["d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8", "d9d669583c2d2a88e54c0120be6f8195b2575192f178f925099813ff9095d139"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "9a893f265725bc67a9035d128d83e6b859d0f9a7",
-                "public_key": "af8c81f6c8f3fe9df23d3a07575fe7cdf81bbe6e40cb7511daab2b6154efbc3c",
-                "jailed": false,
-                "chains": ["dcc98e38e1edb55a97265efca6c34f21e55f683abdded0aa71df3958a49c8b69", "26a2800156f76b66bcb5661f2988a9d09e76caaffd053fe17bf20d251b4cb823"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "a8e03ee2dd161c2000bad7c945036e231a167549",
-                "public_key": "73f765cb848f9d40aa9a16a3726f1ec5703f77bad22b2487cd4baaaf777f6e90",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "bc0660301ef231cb1671d8d94ed57c7d314e13be",
-                "public_key": "f7cd23babb3f286d2a8dca4e8aa502c7cfc92d2b7865b9130f44f499f95b4ce3",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "90000000",
-                "status": 2,
-                "staked_tokens": "90000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "ca58ffe4deb595af3307d483e4facfd437156122",
-                "public_key": "916c2f0cd5c54f4cf08c903161fc8e9dcbe75f064a2c4cab61e26c232da95a88",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "90000000",
-                "status": 2,
-                "staked_tokens": "90000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "cac1782f210d34943e663fdbdb118f09a5376d9f",
-                "public_key": "6f1b0dd5046b33faee6f6759014b4c47336f117a453d3370179754a95ded802a",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "90000000",
-                "status": 2,
-                "staked_tokens": "90000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "d0092305fa8ebf9a97a61d007b878a7840f51900",
-                "public_key": "c4553f77697e2dc51ae2b2a7460821dcde8ca876a1b602d13501d9d37584ddfc",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"],
-                "max_relays": "10000000",
-                "status": 2,
-                "staked_tokens": "10000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "d9e8b0b568420bc9b1abe9273b0b6bfc6d43ac2c",
-                "public_key": "dd7c88ffed44db7cde3f717b336409b08d247c963be54be35e5f38111459d2a8",
-                "jailed": false,
-                "chains": ["8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff", "10d1290eee169e3970afb106fe5417a11b81676ce1e2119a0292df29f0445d30", "4ae7539e01ad2c42528b6a697f118a3535e404fe65999b2c6fee506465390367"],
-                "max_relays": "1000000000",
-                "status": 2,
-                "staked_tokens": "1000000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }, {
-                "address": "fc76641dfff7b09086f1a6cd9063bd3d99dd9763",
-                "public_key": "2b1bc6c6cb5218127b91ac896c462cf76025116713897bfd26a60fccb88be1fe",
-                "jailed": false,
-                "chains": ["a969144c864bd87a92e974f11aca9d964fb84cf5fb67bcc6583fe91a407a9309"],
-                "max_relays": "100000000",
-                "status": 2,
-                "staked_tokens": "100000000",
-                "unstaking_time": "1970-01-01T00:00:00Z"
-            }],
+                    "address": "031ccd0821df95cd80b78182c04937b45456b08f",
+                    "public_key": "57692033055cbdd1a3308a6364b24121d32d7536bb51660843ddfd96c879c2ba",
+                    "jailed": false,
+                    "chains": [
+                        "4ae7539e01ad2c42528b6a697f118a3535e404fe65999b2c6fee506465390367"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "2ca5acb7ef55a89dba835fa3bbec5ff002119e79",
+                    "public_key": "519bb77ecc69818a9e5cf7bc44d8371e7998b696143fa89b17c6c4faac13ee1c",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "2d089de210afd5176b46b38b7c5f4b1ce63622bf",
+                    "public_key": "fa457de4393c386ae3c4dde8703bf25080cc9909d98b55fbc7d6f2ca057450a2",
+                    "jailed": false,
+                    "chains": [
+                        "d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "4211d2c0604a6088a047851a16e6e88426f8b5dd",
+                    "public_key": "8bca04934c532b3b6efa8fc3737b2d80d4fcfb78318011ef0f647fef7b57f09f",
+                    "jailed": false,
+                    "chains": [
+                        "a969144c864bd87a92e974f11aca9d964fb84cf5fb67bcc6583fe91a407a9309",
+                        "8ef9a7c67f6f8ad14f82c1f340963951245f912f037a7087f3f2d2f9f9ee38a8"
+                    ],
+                    "max_relays": "10000000",
+                    "status": 2,
+                    "staked_tokens": "10000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "4fa209fc2677153ce7fa11a115817f9fd078b3d6",
+                    "public_key": "d196e90a2399e7c5bd610e440a36147990b02012fc4c87798292ede77398dcdc",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "90000000",
+                    "status": 2,
+                    "staked_tokens": "90000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "55067bb69f069a343d13f682c134f70c3bf8465a",
+                    "public_key": "7c7b3269e0928d1a80310a3214589ebf4b41b20f01ed87a4f0abb344977325a7",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff",
+                        "d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8"
+                    ],
+                    "max_relays": "1000000",
+                    "status": 2,
+                    "staked_tokens": "1000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "56c4e3fddea141566f906e92545e027fdefcb8b2",
+                    "public_key": "14dc389a0d3903f4ba2517747f79a8db44c5205f3dca538eb3373e20057c8334",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "90000000",
+                    "status": 2,
+                    "staked_tokens": "90000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "96de69d684a1d3ed6cccd5f70d99d77e28bda55b",
+                    "public_key": "6e2cda5a6b6709f562dfbc7628099878fabb12d4943261be3cbb76da0bced999",
+                    "jailed": false,
+                    "chains": [
+                        "d9d77bce50d80e70026bd240fb0759f08aab7aee63d0a6d98c545f2b5ae0a0b8",
+                        "d9d669583c2d2a88e54c0120be6f8195b2575192f178f925099813ff9095d139"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "9a893f265725bc67a9035d128d83e6b859d0f9a7",
+                    "public_key": "af8c81f6c8f3fe9df23d3a07575fe7cdf81bbe6e40cb7511daab2b6154efbc3c",
+                    "jailed": false,
+                    "chains": [
+                        "dcc98e38e1edb55a97265efca6c34f21e55f683abdded0aa71df3958a49c8b69",
+                        "26a2800156f76b66bcb5661f2988a9d09e76caaffd053fe17bf20d251b4cb823"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "a8e03ee2dd161c2000bad7c945036e231a167549",
+                    "public_key": "73f765cb848f9d40aa9a16a3726f1ec5703f77bad22b2487cd4baaaf777f6e90",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "bc0660301ef231cb1671d8d94ed57c7d314e13be",
+                    "public_key": "f7cd23babb3f286d2a8dca4e8aa502c7cfc92d2b7865b9130f44f499f95b4ce3",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "90000000",
+                    "status": 2,
+                    "staked_tokens": "90000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "ca58ffe4deb595af3307d483e4facfd437156122",
+                    "public_key": "916c2f0cd5c54f4cf08c903161fc8e9dcbe75f064a2c4cab61e26c232da95a88",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "90000000",
+                    "status": 2,
+                    "staked_tokens": "90000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "cac1782f210d34943e663fdbdb118f09a5376d9f",
+                    "public_key": "6f1b0dd5046b33faee6f6759014b4c47336f117a453d3370179754a95ded802a",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "90000000",
+                    "status": 2,
+                    "staked_tokens": "90000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "d0092305fa8ebf9a97a61d007b878a7840f51900",
+                    "public_key": "c4553f77697e2dc51ae2b2a7460821dcde8ca876a1b602d13501d9d37584ddfc",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff"
+                    ],
+                    "max_relays": "10000000",
+                    "status": 2,
+                    "staked_tokens": "10000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "d9e8b0b568420bc9b1abe9273b0b6bfc6d43ac2c",
+                    "public_key": "dd7c88ffed44db7cde3f717b336409b08d247c963be54be35e5f38111459d2a8",
+                    "jailed": false,
+                    "chains": [
+                        "8cf7f8799c5b30d36c86d18f0f4ca041cf1803e0414ed9e9fd3a19ba2f0938ff",
+                        "10d1290eee169e3970afb106fe5417a11b81676ce1e2119a0292df29f0445d30",
+                        "4ae7539e01ad2c42528b6a697f118a3535e404fe65999b2c6fee506465390367"
+                    ],
+                    "max_relays": "1000000000",
+                    "status": 2,
+                    "staked_tokens": "1000000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                },
+                {
+                    "address": "fc76641dfff7b09086f1a6cd9063bd3d99dd9763",
+                    "public_key": "2b1bc6c6cb5218127b91ac896c462cf76025116713897bfd26a60fccb88be1fe",
+                    "jailed": false,
+                    "chains": [
+                        "a969144c864bd87a92e974f11aca9d964fb84cf5fb67bcc6583fe91a407a9309"
+                    ],
+                    "max_relays": "100000000",
+                    "status": 2,
+                    "staked_tokens": "100000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                }
+            ],
             "exported": false
         },
         "auth": {
@@ -216,8 +270,7 @@
                 "tx_sig_limit": "7",
                 "tx_size_cost_per_byte": "10"
             },
-            "Accounts": [
-                {
+            "Accounts": [{
                     "type": "posmint/Account",
                     "value": {
                         "address": "5ae8cecac19dbecff47d380d657087b3b8ae53c1",
@@ -493,8 +546,7 @@
             },
             "prevState_total_power": "0",
             "prevState_validator_powers": null,
-            "validators": [
-                {
+            "validators": [{
                     "address": "029939ca0463aeb1abd202a88f04e5d9c325dbc7",
                     "public_key": "dc5a085f4fe38a62a0b17ca53250dfdfa598ae568242e11ec063d3c209e8c7a6",
                     "jailed": false,
