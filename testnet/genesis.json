@@ -1,6 +1,6 @@
 {
     "genesis_time": "2020-05-07T00:00:00.000000Z",
-    "chain_id": "testnet",
+    "chain_id": "testnet-r1",
     "consensus_params": {
         "block": {
             "max_bytes": "1000000",
