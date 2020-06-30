@@ -1,6 +1,6 @@
 {
-    "genesis_time": "2020-06-01T23:35:15.556598Z",
-    "chain_id": "testnet",
+    "genesis_time": "2020-06-30T16:00:00.000000Z",
+    "chain_id": "testnet-r1",
     "consensus_params": {
         "block": {
             "max_bytes": "4000000",
@@ -23,12 +23,25 @@
                 "unstaking_time": "3600000000000",
                 "max_applications": "9223372036854775807",
                 "app_stake_minimum": "1000000",
-                "base_relays_per_pokt": "2",
+                "base_relays_per_pokt": "167",
                 "stability_adjustment": "0",
                 "participation_rate_on": false,
                 "maximum_chains": "15"
             },
-            "applications": [],
+            "applications": [
+                {
+                    "address": "0594a790e92d423e565652ae16678f3329ec9985",
+                    "public_key": "8d88978729be80cd64d68c3655f307673bcd217316a439ed01fb1dbbdc58605b",
+                    "jailed": false,
+                    "chains": [
+                        "0002"
+                    ],
+                    "max_relays": "1670000",
+                    "status": 2,
+                    "staked_tokens": "1000000000000",
+                    "unstaking_time": "1970-01-01T00:00:00Z"
+                }
+            ],
             "exported": false
         },
         "auth": {
@@ -36,7 +49,8 @@
                 "max_memo_characters": "1",
                 "tx_sig_limit": "8",
                 "fee_multipliers": {
-                    "fee_multiplier": [{
+                    "fee_multiplier": [
+                        {
                             "key": "claim",
                             "multiplier": "10"
                         },
@@ -48,116 +62,142 @@
                     "default": "1"
                 }
             },
-            "accounts": [{
-                "type": "posmint/Account",
-                "value": {
-                    "address": "cad3b0b8f5b54f0750385c6ca17a5c745d9dba17",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "e603378f4c0fe1ca57d545741a8150231218aa3d9e2f62c06a5005dfbca3bf3d"
+            "accounts": [
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "cad3b0b8f5b54f0750385c6ca17a5c745d9dba17",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "e603378f4c0fe1ca57d545741a8150231218aa3d9e2f62c06a5005dfbca3bf3d"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "77e608d8ae4cd7b812f122dc82537e79dd3565cb",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "ad58bc31d43495e0273d7571bcec1e3d4f6e9233f015144f8c7308de6bb4ab01"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "e6946760d9833f49da39aae9500537bef6f33a7a",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "4ac6202fca022b932be12a5bd51dc8375bfee843f4f90c412e83ad9af1069361"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "7674a47cc977326f1df6cb92c7b5a2ad36557ea2",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "257943d4255d60f9a042a2cd81ff64b711bedbf72db64d1f84b0e2455ce1dfd1"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "c7b7b7665d20a7172d0c0aa58237e425f333560a",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "d4448f629a19e4fb68a904a8d879fdd8b1b326d0fff39973f39af737a282be71"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "6925c38c9303a7a1864e9dfcc85b86f9c150519a",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "c96096c880b03e1ffa1bd8c4a4a51c309b015ca011b2024c7441b5561f4cdbbf"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "e7e394d12a375881c828e93fa02faf6fe58942e1",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "c1facba69ec538d2e1968c23445452da2094f1aa52c9b1d95fc34c82d3c77f39"
+                        }
+                    }
+                },
+                {
+                    "type": "posmint/Account",
+                    "value": {
+                        "address": "668a64de6f0fa888241f4c04521dc077fc2eb345",
+                        "coins": [
+                            {
+                                "amount": "18446743929693333435",
+                                "denom": "upokt"
+                            }
+                        ],
+                        "public_key": {
+                            "type": "crypto/ed25519_public_key",
+                            "value": "e3e316bb4c0b2f0087b5d67a95d54f0cd4b15c7cbd3f03cee670c93be0af8e64"
+                        }
                     }
                 }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "610cf8a6e8cefbaded845f1c1dc3b10a670be26b",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "1807948ea0041de2a9cd573d0edb073c1eaea60313c364c16c1bcd27629e305b"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "e6946760d9833f49da39aae9500537bef6f33a7a",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "4ac6202fca022b932be12a5bd51dc8375bfee843f4f90c412e83ad9af1069361"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "7674a47cc977326f1df6cb92c7b5a2ad36557ea2",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "257943d4255d60f9a042a2cd81ff64b711bedbf72db64d1f84b0e2455ce1dfd1"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "c7b7b7665d20a7172d0c0aa58237e425f333560a",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "d4448f629a19e4fb68a904a8d879fdd8b1b326d0fff39973f39af737a282be71"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "f6dc0b244c93232283cd1d8443363946d0a3d77a",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "1c03871c9f6d437a1856cc5141afa7beb1670e82ce692cb7d041d4bc90ab71ad"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "86209713befeca0807714bcdd5b79e81073faf8f",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "11ac3c35a531ec39f9c5f9164cdf13b19572181dc2048cba666ade0947df6a71"
-                    }
-                }
-            }, {
-                "type": "posmint/Account",
-                "value": {
-                    "address": "915a58ae437d2c2d6f35ac11b79f42972267700d",
-                    "coins": [{
-                        "amount": "18446743929693333435",
-                        "denom": "upokt"
-                    }],
-                    "public_key": {
-                        "type": "crypto/ed25519_public_key",
-                        "value": "9290914ab72b4e1d377ac53350996b937ed466a01e3381a7de40282d11501f5b"
-                    }
-                }
-            }],
+            ],
             "supply": []
         },
         "gov": {
             "params": {
-                "acl": [{
+                "acl": [
+                    {
                         "acl_key": "application/ApplicationStakeMinimum",
                         "address": "b3d86cd8ab4aa0cb9861cb795d8d154e685a94cf"
                     },
@@ -317,46 +357,29 @@
                 "dao_allocation": "10",
                 "proposer_allocation": "1",
                 "maximum_chains": "15",
-                "max_jailed_blocks": "6",
+                "max_jailed_blocks": "35040",
                 "max_evidence_age": "120000000000",
-                "signed_blocks_window": "100",
-                "min_signed_per_window": "1",
+                "signed_blocks_window": "100000000",
+                "min_signed_per_window": "0",
                 "downtime_jail_duration": "6000000000000",
                 "slash_fraction_double_sign": "0.05",
-                "slash_fraction_downtime": "0.01"
+                "slash_fraction_downtime": "0.000001"
             },
             "prevState_total_power": "0",
             "prevState_validator_powers": null,
-            "validators": [{
-                    "address": "610cf8a6e8cefbaded845f1c1dc3b10a670be26b",
-                    "public_key": "1807948ea0041de2a9cd573d0edb073c1eaea60313c364c16c1bcd27629e305b",
+            "validators": [
+                {
+                    "address": "77e608d8ae4cd7b812f122dc82537e79dd3565cb",
+                    "public_key": "ad58bc31d43495e0273d7571bcec1e3d4f6e9233f015144f8c7308de6bb4ab01",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node1.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
@@ -366,31 +389,13 @@
                     "public_key": "4ac6202fca022b932be12a5bd51dc8375bfee843f4f90c412e83ad9af1069361",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node2.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
@@ -400,31 +405,13 @@
                     "public_key": "257943d4255d60f9a042a2cd81ff64b711bedbf72db64d1f84b0e2455ce1dfd1",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node3.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
@@ -434,65 +421,29 @@
                     "public_key": "d4448f629a19e4fb68a904a8d879fdd8b1b326d0fff39973f39af737a282be71",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node4.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
                 },
                 {
-                    "address": "f6dc0b244c93232283cd1d8443363946d0a3d77a",
-                    "public_key": "1c03871c9f6d437a1856cc5141afa7beb1670e82ce692cb7d041d4bc90ab71ad",
+                    "address": "6925c38c9303a7a1864e9dfcc85b86f9c150519a",
+                    "public_key": "c96096c880b03e1ffa1bd8c4a4a51c309b015ca011b2024c7441b5561f4cdbbf",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node5.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
@@ -502,65 +453,29 @@
                     "public_key": "11ac3c35a531ec39f9c5f9164cdf13b19572181dc2048cba666ade0947df6a71",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node6.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
                 },
                 {
-                    "address": "915a58ae437d2c2d6f35ac11b79f42972267700d",
-                    "public_key": "9290914ab72b4e1d377ac53350996b937ed466a01e3381a7de40282d11501f5b",
+                    "address": "e7e394d12a375881c828e93fa02faf6fe58942e1",
+                    "public_key": "c1facba69ec538d2e1968c23445452da2094f1aa52c9b1d95fc34c82d3c77f39",
                     "jailed": false,
                     "status": 2,
-                    "tokens": "1500000000000",
+                    "tokens": "999999999000000",
                     "service_url": "https://node7.testnet.pokt.network:443",
                     "chains": [
                         "0002",
                         "0023",
-                        "0031",
-                        "0032",
-                        "0040",
-                        "0044",
-                        "0046",
-                        "0057",
-                        "005C",
                         "0021",
-                        "0041",
-                        "003F",
-                        "0043",
-                        "005E",
-                        "0065",
-                        "0003",
                         "0022",
-                        "0042",
-                        "0045",
-                        "0066",
-                        "0067",
-                        "0014",
                         "0020"
                     ],
                     "unstaking_time": "0001-01-01T00:00:00Z"
