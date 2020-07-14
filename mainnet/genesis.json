@@ -13776,7 +13776,7 @@
                     "public_key": "364518e9901369550c108558d8108024f26c78e082fe0889f11baaa2a3487149",
                     "jailed": true,
                     "status": 2,
-                    "tokens": "16666669999.999998",
+                    "tokens": "16666670000",
                     "service_url": "https://pocket11.tuku.dev:443",
                     "chains": [
                         "0001",
