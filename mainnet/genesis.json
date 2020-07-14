@@ -8888,7 +8888,7 @@
                     "public_key": "03a0ba6ba4eeba5d33562bf33d1817be7dba7638358ba584d61422c2f00cdbf5",
                     "jailed": true,
                     "status": 2,
-                    "tokens": "133333329999.99998",
+                    "tokens": "133333330000",
                     "service_url": "https://node1.stilch.com:443",
                     "chains": [
                         "0001",
