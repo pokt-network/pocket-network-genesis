@@ -5292,22 +5292,6 @@
                 {
                     "type": "posmint/Account",
                     "value": {
-                        "address": "ad040d3a81b6a864667daab6708d92684557a2b6",
-                        "coins": [
-                            {
-                                "amount": "0",
-                                "denom": "upokt"
-                            }
-                        ],
-                        "public_key": {
-                            "type": "crypto/ed25519_public_key",
-                            "value": "5c1d1ff507058413129594b726765df77ad35fb89d0a966869db9a29938e65e5"
-                        }
-                    }
-                },
-                {
-                    "type": "posmint/Account",
-                    "value": {
                         "address": "73bfbfc8a939b385833997e43bbb58203ced909f",
                         "coins": [
                             {
@@ -12563,19 +12547,6 @@
                     "unstaking_time": "2020-11-10T00:00:00Z"
                 },
                 {
-                    "address": "ad040d3a81b6a864667daab6708d92684557a2b6",
-                    "public_key": "5c1d1ff507058413129594b726765df77ad35fb89d0a966869db9a29938e65e5",
-                    "jailed": true,
-                    "status": 2,
-                    "tokens": "35000000000",
-                    "service_url": "https://pocket-testnet.everstake.one:443",
-                    "chains": [
-                        "0001",
-                        "0021"
-                    ],
-                    "unstaking_time": "2020-11-10T00:00:00Z"
-                },
-                {
                     "address": "73bfbfc8a939b385833997e43bbb58203ced909f",
                     "public_key": "34114eba7cc8f102d85e638efb59bc0764cccffb8c2a1eed761d1997d71a5ca8",
                     "jailed": true,
@@ -13919,7 +13890,7 @@
                     "public_key": "5c1d1ff507058413129594b726765df77ad35fb89d0a966869db9a29938e65e5",
                     "jailed": true,
                     "status": 2,
-                    "tokens": "15005000000",
+                    "tokens": "50005000000",
                     "service_url": "https://pokt1.everstake.one:443",
                     "chains": [
                         "0001",
