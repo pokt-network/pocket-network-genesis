@@ -1,6 +1,6 @@
 {
-    "genesis_time": "2020-06-30T16:00:00.000000Z",
-    "chain_id": "testnet-r1",
+    "genesis_time": "2020-07-15T15:00:00.000000Z",
+    "chain_id": "testnet",
     "consensus_params": {
         "block": {
             "max_bytes": "4000000",
@@ -28,37 +28,15 @@
                 "participation_rate_on": false,
                 "maximum_chains": "15"
             },
-            "applications": [
-                {
-                    "address": "0594a790e92d423e565652ae16678f3329ec9985",
-                    "public_key": "8d88978729be80cd64d68c3655f307673bcd217316a439ed01fb1dbbdc58605b",
-                    "jailed": false,
-                    "chains": [
-                        "0002"
-                    ],
-                    "max_relays": "1670000",
-                    "status": 2,
-                    "staked_tokens": "1000000000000",
-                    "unstaking_time": "1970-01-01T00:00:00Z"
-                }
-            ],
+            "applications": [],
             "exported": false
         },
         "auth": {
             "params": {
-                "max_memo_characters": "1",
+                "max_memo_characters": "75",
                 "tx_sig_limit": "8",
                 "fee_multipliers": {
-                    "fee_multiplier": [
-                        {
-                            "key": "claim",
-                            "multiplier": "10"
-                        },
-                        {
-                            "key": "proof",
-                            "multiplier": "10"
-                        }
-                    ],
+                    "fee_multiplier": [],
                     "default": "1"
                 }
             },
@@ -344,7 +322,7 @@
                     "Version": "0"
                 }
             },
-            "DAO_Tokens": "0"
+            "DAO_Tokens": "50000000000000"
         },
         "pos": {
             "params": {
@@ -357,11 +335,11 @@
                 "dao_allocation": "10",
                 "proposer_allocation": "1",
                 "maximum_chains": "15",
-                "max_jailed_blocks": "35040",
+                "max_jailed_blocks": "37960",
                 "max_evidence_age": "120000000000",
-                "signed_blocks_window": "100000000",
-                "min_signed_per_window": "0",
-                "downtime_jail_duration": "6000000000000",
+                "signed_blocks_window": "10",
+                "min_signed_per_window": "0.60",
+                "downtime_jail_duration": "3600000000000",
                 "slash_fraction_double_sign": "0.05",
                 "slash_fraction_downtime": "0.000001"
             },
@@ -378,7 +356,6 @@
                     "chains": [
                         "0002",
                         "0023",
-                        "0021",
                         "0022",
                         "0020"
                     ],
@@ -394,7 +371,6 @@
                     "chains": [
                         "0002",
                         "0023",
-                        "0021",
                         "0022",
                         "0020"
                     ],
@@ -410,7 +386,6 @@
                     "chains": [
                         "0002",
                         "0023",
-                        "0021",
                         "0022",
                         "0020"
                     ],
@@ -426,7 +401,6 @@
                     "chains": [
                         "0002",
                         "0023",
-                        "0021",
                         "0022",
                         "0020"
                     ],
@@ -442,39 +416,6 @@
                     "chains": [
                         "0002",
                         "0023",
-                        "0021",
-                        "0022",
-                        "0020"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z"
-                },
-                {
-                    "address": "86209713befeca0807714bcdd5b79e81073faf8f",
-                    "public_key": "11ac3c35a531ec39f9c5f9164cdf13b19572181dc2048cba666ade0947df6a71",
-                    "jailed": false,
-                    "status": 2,
-                    "tokens": "999999999000000",
-                    "service_url": "https://node6.testnet.pokt.network:443",
-                    "chains": [
-                        "0002",
-                        "0023",
-                        "0021",
-                        "0022",
-                        "0020"
-                    ],
-                    "unstaking_time": "0001-01-01T00:00:00Z"
-                },
-                {
-                    "address": "e7e394d12a375881c828e93fa02faf6fe58942e1",
-                    "public_key": "c1facba69ec538d2e1968c23445452da2094f1aa52c9b1d95fc34c82d3c77f39",
-                    "jailed": false,
-                    "status": 2,
-                    "tokens": "999999999000000",
-                    "service_url": "https://node7.testnet.pokt.network:443",
-                    "chains": [
-                        "0002",
-                        "0023",
-                        "0021",
                         "0022",
                         "0020"
                     ],
