@@ -12,12 +12,12 @@ track of things we'll need in the genesis files along with supporting details.
 ## Accounts
 
 - `pokt1f0c9y7mahf2ya8tymy8g4rr75ezh3pkklu4c3e` - DAO/PNF
-- `pokt1pmd7pmnxtlmx4puvyedtpgjguy892mwxxwj76x` - faucet
-- `pokt17uukfp7892m0hlv2w2h3gc3mzcc46awldl342n` - validator1
-- `pokt1axx8vf796mn6scal39cqs4jwc3685qaep5hep0` - validator2
-- `pokt1nmwm5csft65uw2z0yndsac4r3z6rhk9kdygtj0` - validator3
-- `pokt13x0e5tx0qvlqtvjv6kdn9dwauvt8n284elqsj4` - validator4
-- `pokt1g7k669jzmuj8u7nxfven8kurwsaaud4vwtdqxk` - validator5
+- `pokt1fpxstscnqtzc9tq0u0nlvg69hqt6zhaxyka2mj` - faucet
+- `pokt1kq2ecszhhrn0z3nwqgqkegeqhr9ftslu5t4ya5` - validator1
+- `pokt15ux823wusfvvkw7y4nnqqx5s95ag5p8xwmj02z` - validator2
+- `pokt17mgzg2wrq248yu5gpvp5adqgwl6s6xg47jdtm0` - validator3
+- `pokt1a5f5hxgaxg83y6s5w8k47dpwylkms4jjjrl9l6` - validator4
+- `pokt19csy3xzhpnzk8eu9ykjjzxk3vzma8gxz5rx3dy` - validator5
 
 ## Private keys
 
@@ -81,9 +81,12 @@ validators:
       log_level: "info"
     client:
       chain-id: pocket-beta
+    gentx:
+      chain-id: pocket-beta
 
 # We can persist arbitrary genesis values via 1 to 1 mapping to genesis.json
 genesis:
+  chain_id: pocket-beta
   app_state:
     # https://docs.cosmos.network/main/build/modules/mint
     mint:

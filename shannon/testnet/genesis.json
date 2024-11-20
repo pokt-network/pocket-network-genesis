@@ -1,8 +1,8 @@
 {
   "app_name": "poktrolld",
   "app_version": "0.0.11-rc",
-  "genesis_time": "2024-11-19T22:52:46.166451Z",
-  "chain_id": "poktroll",
+  "genesis_time": "2024-11-20T16:00:07.993015Z",
+  "chain_id": "pocket-beta",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
@@ -35,42 +35,42 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt17uukfp7892m0hlv2w2h3gc3mzcc46awldl342n",
+          "address": "pokt1kq2ecszhhrn0z3nwqgqkegeqhr9ftslu5t4ya5",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt1axx8vf796mn6scal39cqs4jwc3685qaep5hep0",
+          "address": "pokt15ux823wusfvvkw7y4nnqqx5s95ag5p8xwmj02z",
           "pub_key": null,
           "account_number": "2",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt1nmwm5csft65uw2z0yndsac4r3z6rhk9kdygtj0",
+          "address": "pokt17mgzg2wrq248yu5gpvp5adqgwl6s6xg47jdtm0",
           "pub_key": null,
           "account_number": "3",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt13x0e5tx0qvlqtvjv6kdn9dwauvt8n284elqsj4",
+          "address": "pokt1a5f5hxgaxg83y6s5w8k47dpwylkms4jjjrl9l6",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt1g7k669jzmuj8u7nxfven8kurwsaaud4vwtdqxk",
+          "address": "pokt19csy3xzhpnzk8eu9ykjjzxk3vzma8gxz5rx3dy",
           "pub_key": null,
           "account_number": "5",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "pokt1pmd7pmnxtlmx4puvyedtpgjguy892mwxxwj76x",
+          "address": "pokt1fpxstscnqtzc9tq0u0nlvg69hqt6zhaxyka2mj",
           "pub_key": null,
           "account_number": "6",
           "sequence": "0"
@@ -367,20 +367,20 @@
       },
       "balances": [
         {
-          "address": "pokt1pmd7pmnxtlmx4puvyedtpgjguy892mwxxwj76x",
-          "coins": [
-            {
-              "denom": "upokt",
-              "amount": "9999999999999999999999999999999999999999999999999999999999999999"
-            }
-          ]
-        },
-        {
-          "address": "pokt1g7k669jzmuj8u7nxfven8kurwsaaud4vwtdqxk",
+          "address": "pokt19csy3xzhpnzk8eu9ykjjzxk3vzma8gxz5rx3dy",
           "coins": [
             {
               "denom": "upokt",
               "amount": "1000000001000000"
+            }
+          ]
+        },
+        {
+          "address": "pokt1fpxstscnqtzc9tq0u0nlvg69hqt6zhaxyka2mj",
+          "coins": [
+            {
+              "denom": "upokt",
+              "amount": "9999999999999999999999999999999999999999999999999999999999999999"
             }
           ]
         },
@@ -394,7 +394,7 @@
           ]
         },
         {
-          "address": "pokt13x0e5tx0qvlqtvjv6kdn9dwauvt8n284elqsj4",
+          "address": "pokt15ux823wusfvvkw7y4nnqqx5s95ag5p8xwmj02z",
           "coins": [
             {
               "denom": "upokt",
@@ -403,7 +403,7 @@
           ]
         },
         {
-          "address": "pokt1nmwm5csft65uw2z0yndsac4r3z6rhk9kdygtj0",
+          "address": "pokt1kq2ecszhhrn0z3nwqgqkegeqhr9ftslu5t4ya5",
           "coins": [
             {
               "denom": "upokt",
@@ -412,7 +412,7 @@
           ]
         },
         {
-          "address": "pokt1axx8vf796mn6scal39cqs4jwc3685qaep5hep0",
+          "address": "pokt1a5f5hxgaxg83y6s5w8k47dpwylkms4jjjrl9l6",
           "coins": [
             {
               "denom": "upokt",
@@ -421,7 +421,7 @@
           ]
         },
         {
-          "address": "pokt17uukfp7892m0hlv2w2h3gc3mzcc46awldl342n",
+          "address": "pokt17mgzg2wrq248yu5gpvp5adqgwl6s6xg47jdtm0",
           "coins": [
             {
               "denom": "upokt",
@@ -506,10 +506,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "poktvaloper17uukfp7892m0hlv2w2h3gc3mzcc46awl0vzhpt",
+                "validator_address": "poktvaloper1kq2ecszhhrn0z3nwqgqkegeqhr9ftslukcxxkv",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "MTpNY7QZepeUlTW28YhCAv3f53N9XS2lb9bqF0PN3Sk="
+                  "key": "XhR/v3G7N3NuyYaw36s5dJrjfLKtZtgNzC/yrhGsPDY="
                 },
                 "value": {
                   "denom": "upokt",
@@ -517,7 +517,7 @@
                 }
               }
             ],
-            "memo": "ab57afd72103ad66f02bd9ad271435fba49f2326@192.168.88.58:26656",
+            "memo": "3b22532b929038d9addaf6f8c4cab1a833f2613e@192.168.88.36:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -527,7 +527,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A4CdzV1JUwNGtQZYYlPZOFoMWxsEpFTyQcTh0TtibdYS"
+                  "key": "AzXCeqCBuiFNz9HkoR8hc52hwtgwPDiikioMhierS67T"
                 },
                 "mode_info": {
                   "single": {
@@ -546,7 +546,7 @@
             "tip": null
           },
           "signatures": [
-            "bAuD8GfIW1A7TisM8wzYz8bg+ftrHA7GaeA0++bbg/MIle9I3AloyyH5WBOoKRuOzEXO07dfgg0JS3yaZ9EB/g=="
+            "z8R/uZCpyhCNyn4/lQuiJgrGeHPNqLAgPHrnO3WyLNhsAeo/NjI4ghl/Gec4xfyKmA4qpFe2aW5RewkR+FsXKw=="
           ]
         }
       ]
