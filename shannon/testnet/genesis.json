@@ -2,7 +2,7 @@
   "app_name": "poktrolld",
   "app_version": "0.0.11-rc",
   "genesis_time": "2024-11-19T22:52:46.166451Z",
-  "chain_id": "pocket-beta",
+  "chain_id": "poktroll",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
