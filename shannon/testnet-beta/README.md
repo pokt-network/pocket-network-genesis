@@ -4,6 +4,7 @@ TODO(@olshansk, @okdas): This document is a work in progress and intended to kee
 track of things we'll need in the genesis files along with supporting details.
 
 - [Accounts](#accounts)
+- [Seeds](#seeds)
 - [Private keys](#private-keys)
 - [Ignite config.yaml](#ignite-configyaml)
 
@@ -16,6 +17,10 @@ track of things we'll need in the genesis files along with supporting details.
 - **Validator3**: `pokt17mgzg2wrq248yu5gpvp5adqgwl6s6xg47jdtm0`
 - **Validator4**: `pokt1a5f5hxgaxg83y6s5w8k47dpwylkms4jjjrl9l6`
 - **Validator5**: `pokt19csy3xzhpnzk8eu9ykjjzxk3vzma8gxz5rx3dy`
+
+## Seeds
+
+Currently supported list of seed nodes can be found in the [seeds](./seeds) file.
 
 ## Private keys
 
