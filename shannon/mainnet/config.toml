@@ -19,7 +19,7 @@ version = "0.38.12"
 proxy_app = "tcp://127.0.0.1:26658"
 
 # A custom human readable name for this node
-moniker = "mynode"
+moniker = "default-pocket-moniker"
 
 # Database backend: goleveldb | cleveldb | boltdb | rocksdb | badgerdb
 # * goleveldb (github.com/syndtr/goleveldb - most popular implementation)
@@ -166,7 +166,7 @@ experimental_close_on_slow_client = false
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "10s"
+timeout_broadcast_tx_commit = "900s"
 
 # Maximum number of requests that can be sent in a batch
 # If the value is set to '0' (zero-value), then no maximum batch size will be
@@ -174,7 +174,7 @@ timeout_broadcast_tx_commit = "10s"
 max_request_batch_size = 10
 
 # Maximum size of request body, in bytes
-max_body_bytes = 1000000
+max_body_bytes = 100000000
 
 # Maximum size of request header, in bytes
 max_header_bytes = 1048576
@@ -203,11 +203,11 @@ pprof_laddr = "localhost:6060"
 [p2p]
 
 # Address to listen for incoming connections
-laddr = "tcp://0.0.0.0:420"
+laddr = "tcp://0.0.0.0:26656"
 
 # Address to advertise to peers for them to dial. If empty, will use the same
 # port as the laddr, and will introspect on the listener to figure out the
-# address. IP and port are required. Example: 159.89.10.97:420
+# address. IP and port are required. Example: 159.89.10.97:26656
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
@@ -330,7 +330,7 @@ keep-invalid-txs-in-cache = false
 
 # Maximum size of a single transaction.
 # NOTE: the max size of a tx transmitted over the network is {max_tx_bytes}.
-max_tx_bytes = 1048576
+max_tx_bytes = 100000000
 
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
@@ -409,7 +409,7 @@ version = "v0"
 wal_file = "data/cs.wal/wal"
 
 # How long we wait for a proposal block before prevoting nil
-timeout_propose = "1s"
+timeout_propose = "1m"
 # How much timeout_propose increases with each round
 timeout_propose_delta = "5s"
 # How long we wait after receiving +2/3 prevotes for “anything” (ie. not a single block or nil)
@@ -423,7 +423,7 @@ timeout_precommit_delta = "5s"
 # How long we wait after committing a block, before starting on the new
 # height (this gives us a chance to receive some more precommits, even
 # though we already have +2/3).
-timeout_commit = "1s"
+timeout_commit = "1m"
 
 # How many blocks to look back to check existence of the node's consensus votes before joining consensus
 # When non-zero, the node will panic upon restart
