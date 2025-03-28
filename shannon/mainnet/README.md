@@ -1,4 +1,4 @@
 # Pocket Network Shannon MainNet
 
-TODO(@olshansk, @okdas): This document is a work in progress and intended to keep
-track of things we'll need in the genesis files along with supporting details.
+See the details in [pokt-network/poktroll/authorizations](https://github.com/pokt-network/poktroll/tree/main/authorizations)
+for details on how this was generated.

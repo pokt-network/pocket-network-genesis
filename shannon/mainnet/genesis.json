@@ -1,6 +1,6 @@
 {
   "app_name": "pocket",
-  "app_version": "0.1.0",
+  "app_version": "0.1.1",
   "genesis_time": "2025-03-28T17:35:52.277346Z",
   "chain_id": "pocket",
   "initial_height": 1,
@@ -839,7 +839,7 @@
                 }
               }
             ],
-            "memo": "1c19e890e422fc9cbb4a736c3959d299db323f58@69.69.69.69:420",
+            "memo": "1c19e890e422fc9cbb4a736c3959d299db323f58@192.168.1.16:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
