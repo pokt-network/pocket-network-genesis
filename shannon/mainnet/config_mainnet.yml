@@ -1,45 +1,3 @@
-# Pocket Network Shannon MainNet
-
-See the details in [pokt-network/poktroll/authorizations](https://github.com/pokt-network/poktroll/tree/main/authorizations)
-for details on how this was generated.
-
-## Pocket Network Shannon MainNet <!-- omit in toc -->
-
-- [Pocket Network Shannon MainNet](#pocket-network-shannon-mainnet)
-  - [Accounts](#accounts)
-  - [Seeds](#seeds)
-  - [Private keys](#private-keys)
-  - [Ignite config.yaml](#ignite-configyaml)
-    - [Preparation](#preparation)
-    - [Ignite config.yaml](#ignite-configyaml-1)
-
-## Accounts
-
-- **DAO/PNF**: `pokt1hv3xrylxvwd7hfv03j50ql0ttp3s5hqqelegmv`
-- **Validator1**: `poktvaloper12l2xmehtylf4m2vlddsxcgj3hlx8r6266pcaa3`
-- **Grove**: `pokt18808wvw0h4t450t06uvauny8lvscsxjfyua7vh`
-
-## Seeds
-
-Currently supported list of seed nodes can be found in the [seeds](./seeds) file.
-
-## Private keys
-
-The MainNet is currently maintained by Grove.
-
-## Ignite config.yaml
-
-### Preparation
-
-See [this README](./README_Authorizations.md) for additional instructions and steps
-that were taken for MainNet preparation.
-
-### Ignite config.yaml
-
-The following [Ignite CLI](https://github.com/ignite/cli) config was used to
-generate the genesis file for MainNet.
-
-```yaml
 # This is a temporary config file that is used as a reference for the MainNet genesis generation. The content of this file
 # will be pushed to https://github.com/pokt-network/pocket-network-genesis/tree/master/shannon/mainnet along with genesis.json
 # and recommended configs.
@@ -316,4 +274,3 @@ genesis:
           supplier: 0.7 # Suppliers earn 70% of the global inflation during all claim settlements associated with the service they provide.
           source_owner: 0.1 # Service owners earn 10% of the global inflation during all claim settlements associated with their service.
           application: 0.0 # Application earns nothing from global inflation during all claim settlements.
-```
