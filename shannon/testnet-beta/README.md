@@ -9,11 +9,11 @@
 
 - **DAO/PNF**: `pokt1f0c9y7mahf2ya8tymy8g4rr75ezh3pkklu4c3e`
 - **Faucet**: `pokt1fpxstscnqtzc9tq0u0nlvg69hqt6zhaxyka2mj`
-- **Validator1**: `pokt1kq2ecszhhrn0z3nwqgqkegeqhr9ftslu5t4ya5`
-- **Validator2**: `pokt15ux823wusfvvkw7y4nnqqx5s95ag5p8xwmj02z`
-- **Validator3**: `pokt17mgzg2wrq248yu5gpvp5adqgwl6s6xg47jdtm0`
-- **Validator4**: `pokt1a5f5hxgaxg83y6s5w8k47dpwylkms4jjjrl9l6`
-- **Validator5**: `pokt19csy3xzhpnzk8eu9ykjjzxk3vzma8gxz5rx3dy`
+- **Validator1**: `pokt1sadgp3998r2wxka9ec88hm0znxumr4m7wh49x5`
+- **Validator2**: `pokt14kgy84sgl6a6e4kk8hn3e8gj3c3spk6jwh2q64`
+- **Validator3**: `pokt18rdpjl3ndma372h4503ug8cpd6kzwr8hted8wy`
+- **Validator4**: `pokt1u994thderhxj60pwhjscne8wcfn8efc8w2020j`
+- **Validator5**: `pokt1ay694phar5wwsvmedyhmmxh08gjwc2vm4qxtsj`
 
 ## Seeds
 
@@ -34,12 +34,16 @@ generate the genesis file for the Shannon Beta TestNet.
 ```yaml
 version: 1
 build:
-  main: cmd/poktrolld
+  main: cmd/pocketd
+  binary: pocketd
 accounts:
-  - name: pnf
-    address: pokt1f0c9y7mahf2ya8tymy8g4rr75ezh3pkklu4c3e
+  - name: faucet
     coins:
-      - 69420000000upokt
+      - 9999999999999999999999999999999999999999999999999999999999999999upokt
+  - name: pnf
+    address: "pokt1f0c9y7mahf2ya8tymy8g4rr75ezh3pkklu4c3e"
+    coins:
+      - 69000000000000000000042upokt
   - name: validator1
     coins:
       - 1000000001000000upokt
@@ -55,9 +59,10 @@ accounts:
   - name: validator5
     coins:
       - 1000000001000000upokt
-  - name: faucet
-    coins:
-      - 9999999999999999999999999999999999999999999999999999999999999999upokt
+faucet:
+  name: faucet
+  coins:
+    - 10000upokt
 client:
   typescript:
     path: ts-client
@@ -66,49 +71,48 @@ client:
   openapi:
     path: docs/static/openapi.yml
 validators:
-  # Multi-validator support is ready but not released yet https://github.com/ignite/cli/issues/4374, https://github.com/ignite/cli/pull/4409#issue-2659096643
   - name: validator1
     bonded: 1000000000000000upokt
+
     app:
       telemetry:
         enabled: true
-        prometheus-retention-time: "1800" # seconds
+      pocket:
+        telemetry:
+          cardinality-level: high
+      api:
+        swagger: true
     config:
       moniker: "validator1"
       consensus:
-        timeout_commit: "300s"
-        timeout_propose: "300s"
+        timeout_commit: "5m"
+        timeout_propose: "5m"
       instrumentation:
         prometheus: true
       log_level: "info"
+
+      rpc:
+        max_body_bytes: "100000000"
+      mempool:
+        max_tx_bytes: "100000000"
     client:
       chain-id: pocket-beta
-    gentx:
-      chain-id: pocket-beta
 
-# We can persist arbitrary genesis values via 1 to 1 mapping to genesis.json
 genesis:
+  app_name: pocket
   chain_id: pocket-beta
   app_state:
-    # https://docs.cosmos.network/main/build/modules/mint
     mint:
       params:
         mint_denom: upokt
-        # Note that in Pocket Network, the majority of the inflation/deflation
-        # comes from the utility of network, not just the validators that
-        # secure it. Therefore, the inflation params of x/mint are set to 0.
-        # See x/tokenomics for all details related to token inflation.
+
         inflation_rate_change: "0.0"
         inflation_max: "0.0"
         inflation_min: "0.0"
-        # These parameters are included for posterity but commented out for clarity
-        # goal_bonded: "NA"
-        # blocks_per_year: "NA"
-        # max_supply: "NA"
+
     staking:
       params:
         bond_denom: upokt
-        # TODO_BETA(@okdas): Update this to 10 for Beta TestNet.
         max_validators: 10
     crisis:
       constant_fee:
@@ -117,36 +121,43 @@ genesis:
     gov:
       params:
         min_deposit:
-          - amount: "10000"
+          - amount: "1000000000000000"
             denom: upokt
+
     application:
       params:
         max_delegated_gateways: "7"
         min_stake:
-          # TODO_BETA(@bryanchriswhite): Determine realistic amount for minimum application stake amount.
-          amount: "100000000" # 100 POKT
+          amount: "100000000"
           denom: upokt
       applicationList: []
+
     supplier:
       params:
-        # TODO_BETA(@bryanchriswhite): Determine realistic amount for minimum gateway stake amount.
         min_stake:
-          amount: "1000000" # 1 POKT
+          amount: "1000000"
+          denom: upokt
+
+        staking_fee:
+          amount: "1"
           denom: upokt
       supplierList: []
+
     gateway:
       params:
-        # TODO_BETA(@bryanchriswhite): Determine realistic amount for minimum gateway stake amount.
         min_stake:
-          amount: "1000000" # 1 POKT
+          amount: "1000000"
           denom: upokt
       gatewayList: []
+
     service:
       params:
         add_service_fee:
           amount: "1000000000"
           denom: upokt
+        target_num_relays: 100000
       serviceList: []
+
     proof:
       params:
         proof_request_probability: "0.25"
@@ -159,9 +170,11 @@ genesis:
         proof_submission_fee:
           amount: "1000000"
           denom: upokt
+
     session:
       params:
         num_suppliers_per_session: 15
+
     tokenomics:
       params:
         mint_allocation_percentages:
@@ -170,10 +183,10 @@ genesis:
           supplier: 0.7
           source_owner: 0.15
           application: 0.0
-        # The dao reward address SHOULD match that of the "pnf" below (i.e. `make poktrolld_addr ACC_NAME=pnf`).
-        # This is the address that will receive the dao/foundation rewards during claim settlement (global mint TLM).
-        # TODO_MAINNET(@olshansk): Consolidate the usage of DAO/PNF throughout the configs & codebase.
-        dao_reward_address: "pokt1f0c9y7mahf2ya8tymy8g4rr75ezh3pkklu4c3e"
+
+        dao_reward_address: "pokt1eeeksh2tvkh7wzmfrljnhw4wrhs55lcuvmekkw"
+        global_inflation_per_claim: 0.1
+
     shared:
       params:
         num_blocks_per_session: 10
@@ -184,5 +197,6 @@ genesis:
         proof_window_close_offset_blocks: 4
         supplier_unbonding_period_sessions: 1
         application_unbonding_period_sessions: 1
+        gateway_unbonding_period_sessions: 1
         compute_units_to_tokens_multiplier: 42
 ```

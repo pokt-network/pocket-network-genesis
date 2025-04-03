@@ -8,7 +8,7 @@
 
 # The version of the CometBFT binary that created or
 # last modified the config file. Do not modify this.
-version = "0.38.10"
+version = "0.38.12"
 
 #######################################################################
 ###                   Main Base Config Options                      ###
@@ -166,7 +166,7 @@ experimental_close_on_slow_client = false
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "10s"
+timeout_broadcast_tx_commit = "900s"
 
 # Maximum number of requests that can be sent in a batch
 # If the value is set to '0' (zero-value), then no maximum batch size will be
@@ -174,7 +174,7 @@ timeout_broadcast_tx_commit = "10s"
 max_request_batch_size = 10
 
 # Maximum size of request body, in bytes
-max_body_bytes = 1000000
+max_body_bytes = 100000000
 
 # Maximum size of request header, in bytes
 max_header_bytes = 1048576
@@ -242,10 +242,10 @@ flush_throttle_timeout = "100ms"
 max_packet_msg_payload_size = 1024
 
 # Rate at which packets can be sent, in bytes/second
-send_rate = 5120000
+send_rate = 25600000
 
 # Rate at which packets can be received, in bytes/second
-recv_rate = 5120000
+recv_rate = 25600000
 
 # Set true to enable the peer-exchange reactor
 pex = true
@@ -330,7 +330,7 @@ keep-invalid-txs-in-cache = false
 
 # Maximum size of a single transaction.
 # NOTE: the max size of a tx transmitted over the network is {max_tx_bytes}.
-max_tx_bytes = 1048576
+max_tx_bytes = 100000000
 
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
