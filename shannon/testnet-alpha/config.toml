@@ -8,7 +8,7 @@
 
 # The version of the CometBFT binary that created or
 # last modified the config file. Do not modify this.
-version = "0.38.10"
+version = "0.38.12"
 
 #######################################################################
 ###                   Main Base Config Options                      ###
@@ -166,7 +166,7 @@ experimental_close_on_slow_client = false
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "10s"
+timeout_broadcast_tx_commit = "900s"
 
 # Maximum number of requests that can be sent in a batch
 # If the value is set to '0' (zero-value), then no maximum batch size will be
@@ -174,7 +174,7 @@ timeout_broadcast_tx_commit = "10s"
 max_request_batch_size = 10
 
 # Maximum size of request body, in bytes
-max_body_bytes = 1000000
+max_body_bytes = 100000000
 
 # Maximum size of request header, in bytes
 max_header_bytes = 1048576
@@ -217,7 +217,7 @@ seeds = ""
 persistent_peers = ""
 
 # Path to address book
-addr_book_file = "config/addrbook.json"
+addr_book_file = "data/addrbook.json"
 
 # Set true for strict address routability rules
 # Set false for private or local networks
@@ -242,10 +242,10 @@ flush_throttle_timeout = "100ms"
 max_packet_msg_payload_size = 1024
 
 # Rate at which packets can be sent, in bytes/second
-send_rate = 5120000
+send_rate = 25600000
 
 # Rate at which packets can be received, in bytes/second
-recv_rate = 5120000
+recv_rate = 25600000
 
 # Set true to enable the peer-exchange reactor
 pex = true
@@ -289,8 +289,8 @@ type = "flood"
 recheck = true
 
 # recheck_timeout is the time the application has during the rechecking process
-# to return CheckTx responses, once all requests have been sent. Responses that 
-# arrive after the timeout expires are discarded. It only applies to 
+# to return CheckTx responses, once all requests have been sent. Responses that
+# arrive after the timeout expires are discarded. It only applies to
 # non-local ABCI clients and when recheck is enabled.
 #
 # The ideal value will strongly depend on the application. It could roughly be estimated as the
@@ -330,7 +330,7 @@ keep-invalid-txs-in-cache = false
 
 # Maximum size of a single transaction.
 # NOTE: the max size of a tx transmitted over the network is {max_tx_bytes}.
-max_tx_bytes = 1048576
+max_tx_bytes = 100000000
 
 # Maximum size of a batch of transactions to send to a peer
 # Including space needed by encoding (one varint per transaction).
@@ -409,7 +409,7 @@ version = "v0"
 wal_file = "data/cs.wal/wal"
 
 # How long we wait for a proposal block before prevoting nil
-timeout_propose = "5m0s"
+timeout_propose = "1m"
 # How much timeout_propose increases with each round
 timeout_propose_delta = "5s"
 # How long we wait after receiving +2/3 prevotes for “anything” (ie. not a single block or nil)
@@ -423,7 +423,7 @@ timeout_precommit_delta = "5s"
 # How long we wait after committing a block, before starting on the new
 # height (this gives us a chance to receive some more precommits, even
 # though we already have +2/3).
-timeout_commit = "5m0s"
+timeout_commit = "1m"
 
 # How many blocks to look back to check existence of the node's consensus votes before joining consensus
 # When non-zero, the node will panic upon restart
