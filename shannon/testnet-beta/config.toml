@@ -215,11 +215,9 @@ seeds = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839@shannon-grove-seed1.beta.poktr
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
-# Optional persistent peers
-# persistent_peers = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839@45.77.207.136:26656,886651a13de02c737804097ef19f426f6be37d71@104.238.134.249:20003,d7ef19fc6478323f3b60c9e0d34b79e6ed8090ab@104.238.134.249:20004,a84411edf8db017cf51c376496d322aad7283eb8@172.104.37.82:20004,866f6afef6e7f34777ad6754546b43bbd75a9dcb@172.104.37.82:20000,70d984fa56aadebaa6f694957df32784b013e6d4@172.104.37.82:20001,747d7bab1a759711573c7f7a2bea3bd84503aec2@140.82.6.29:26656,8113ddf1e7288bda4d7348a0bb3fcc7e81b66570@149.28.51.149:26656,44faf1893ab304ac4f75c25f21d1d826e72f3485@104.238.134.249:20005,b5c4c2f4cfed0a216fe1c2c77c1d74de2f966f74@104.238.134.249:20006,cc2722d386b98b98ff76e718e48c33a5eec8456e@104.238.134.249:20007"
 
 # Path to address book
-addr_book_file = "data/addrbook.json"
+addr_book_file = "config/addrbook.json"
 
 # Set true for strict address routability rules
 # Set false for private or local networks
@@ -233,8 +231,6 @@ max_num_outbound_peers = 10
 
 # List of node IDs, to which a connection will be (re)established ignoring any existing limits
 unconditional_peer_ids = ""
-# Optional unconditional peers
-#unconditional_peer_ids = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839,886651a13de02c737804097ef19f426f6be37d71,d7ef19fc6478323f3b60c9e0d34b79e6ed8090ab,a84411edf8db017cf51c376496d322aad7283eb8,866f6afef6e7f34777ad6754546b43bbd75a9dcb,70d984fa56aadebaa6f694957df32784b013e6d4,747d7bab1a759711573c7f7a2bea3bd84503aec2,8113ddf1e7288bda4d7348a0bb3fcc7e81b66570,44faf1893ab304ac4f75c25f21d1d826e72f3485,b5c4c2f4cfed0a216fe1c2c77c1d74de2f966f74,cc2722d386b98b98ff76e718e48c33a5eec8456e"
 
 # Maximum pause when redialing a persistent peer (if zero, exponential backoff is used)
 persistent_peers_max_dial_period = "0s"
