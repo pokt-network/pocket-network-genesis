@@ -195,7 +195,7 @@ tls_cert_file = ""
 tls_key_file = ""
 
 # pprof listen address (https://golang.org/pkg/net/http/pprof)
-pprof_laddr = "localhost:6060"
+pprof_laddr = "0.0.0.0:6060"
 
 #######################################################
 ###           P2P Configuration Options             ###
@@ -211,13 +211,15 @@ laddr = "tcp://0.0.0.0:26656"
 external_address = ""
 
 # Comma separated list of seed nodes to connect to
-seeds = ""
+seeds = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839@shannon-grove-seed1.beta.poktroll.com:26656"
 
 # Comma separated list of nodes to keep persistent connections to
 persistent_peers = ""
+# Optional persistent peers
+# persistent_peers = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839@45.77.207.136:26656,886651a13de02c737804097ef19f426f6be37d71@104.238.134.249:20003,d7ef19fc6478323f3b60c9e0d34b79e6ed8090ab@104.238.134.249:20004,a84411edf8db017cf51c376496d322aad7283eb8@172.104.37.82:20004,866f6afef6e7f34777ad6754546b43bbd75a9dcb@172.104.37.82:20000,70d984fa56aadebaa6f694957df32784b013e6d4@172.104.37.82:20001,747d7bab1a759711573c7f7a2bea3bd84503aec2@140.82.6.29:26656,8113ddf1e7288bda4d7348a0bb3fcc7e81b66570@149.28.51.149:26656,44faf1893ab304ac4f75c25f21d1d826e72f3485@104.238.134.249:20005,b5c4c2f4cfed0a216fe1c2c77c1d74de2f966f74@104.238.134.249:20006,cc2722d386b98b98ff76e718e48c33a5eec8456e@104.238.134.249:20007"
 
 # Path to address book
-addr_book_file = "config/addrbook.json"
+addr_book_file = "data/addrbook.json"
 
 # Set true for strict address routability rules
 # Set false for private or local networks
@@ -231,6 +233,8 @@ max_num_outbound_peers = 10
 
 # List of node IDs, to which a connection will be (re)established ignoring any existing limits
 unconditional_peer_ids = ""
+# Optional unconditional peers
+#unconditional_peer_ids = "78e64eb51f040b86b8e4bed6ba8d895fa2f87839,886651a13de02c737804097ef19f426f6be37d71,d7ef19fc6478323f3b60c9e0d34b79e6ed8090ab,a84411edf8db017cf51c376496d322aad7283eb8,866f6afef6e7f34777ad6754546b43bbd75a9dcb,70d984fa56aadebaa6f694957df32784b013e6d4,747d7bab1a759711573c7f7a2bea3bd84503aec2,8113ddf1e7288bda4d7348a0bb3fcc7e81b66570,44faf1893ab304ac4f75c25f21d1d826e72f3485,b5c4c2f4cfed0a216fe1c2c77c1d74de2f966f74,cc2722d386b98b98ff76e718e48c33a5eec8456e"
 
 # Maximum pause when redialing a persistent peer (if zero, exponential backoff is used)
 persistent_peers_max_dial_period = "0s"
@@ -289,8 +293,8 @@ type = "flood"
 recheck = true
 
 # recheck_timeout is the time the application has during the rechecking process
-# to return CheckTx responses, once all requests have been sent. Responses that 
-# arrive after the timeout expires are discarded. It only applies to 
+# to return CheckTx responses, once all requests have been sent. Responses that
+# arrive after the timeout expires are discarded. It only applies to
 # non-local ABCI clients and when recheck is enabled.
 #
 # The ideal value will strongly depend on the application. It could roughly be estimated as the
@@ -409,7 +413,7 @@ version = "v0"
 wal_file = "data/cs.wal/wal"
 
 # How long we wait for a proposal block before prevoting nil
-timeout_propose = "5m0s"
+timeout_propose = "15s"
 # How much timeout_propose increases with each round
 timeout_propose_delta = "5s"
 # How long we wait after receiving +2/3 prevotes for “anything” (ie. not a single block or nil)
@@ -423,7 +427,7 @@ timeout_precommit_delta = "5s"
 # How long we wait after committing a block, before starting on the new
 # height (this gives us a chance to receive some more precommits, even
 # though we already have +2/3).
-timeout_commit = "5m0s"
+timeout_commit = "30s"
 
 # How many blocks to look back to check existence of the node's consensus votes before joining consensus
 # When non-zero, the node will panic upon restart
